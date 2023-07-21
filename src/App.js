@@ -6,7 +6,8 @@ import TodoList from './components/TodoList';
 function App() {
   const [listTodo, setListTodo] = useState([]);
   let addList = (inputText) => {
-    setListTodo([...listTodo, inputText])
+    if (inputText !== '')
+      setListTodo([...listTodo, inputText])
   }
   const deleteListItem = (key) => {
     let newListTodo = [...listTodo];
