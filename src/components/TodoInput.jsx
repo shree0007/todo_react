@@ -19,7 +19,7 @@ const TodoInput = (props) => {
                 onKeyDown={handleEnterPress} />
 
             <button
-                className='bg-green-700 text-white w-12 h-12 rounded-full m-auto'
+                className='bg-green-700 text-white w-12 h-12 rounded-full m-auto hover:bg-green-900'
                 onClick={() => {
                     props.addList(inputText)
                     setInputText("")

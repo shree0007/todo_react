@@ -13,9 +13,9 @@ function Header(props) {
 
             <nav className="nav">
                 <ul className='flex space-x-4'>
-                    <li className='cursor-pointer'>Home</li>
-                    <li className='cursor-pointer'>About me</li>
-                    <li className='cursor-pointer'>Contact</li>
+                    <li className='cursor-pointer hover:text-orange-600'>Home</li>
+                    <li className='cursor-pointer hover:text-orange-600'>About me</li>
+                    <li className='cursor-pointer hover:text-orange-600'>Contact</li>
                 </ul>
             </nav>
         </header>
