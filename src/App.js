@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import TodoInput from './components/TodoInput';
+import TodoList from './components/TodoList';
 
 function App() {
   const [listTodo, setListTodo] = useState([]);
@@ -12,6 +13,7 @@ function App() {
       TODO APP
       <div className='center-container'>
         <TodoInput addList={addList} />
+        <TodoList />
       </div>
     </div>
   );

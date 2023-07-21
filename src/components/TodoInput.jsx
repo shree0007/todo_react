@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const TodoInput = (props) => {
     const [inputText, setInputText] = useState('');
     return (
-        <div className='input-container w-80 m-auto flex space-x-3'>
+        <div className='input-container w-72 m-auto flex space-x-3'>
             <input
                 type="text"
                 className='flex m-auto p-2 my-12 rounded-lg w-72 text-black'
