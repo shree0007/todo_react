@@ -3,7 +3,7 @@ import './App.css';
 import TodoInput from './components/TodoInput';
 import TodoList from './components/TodoList';
 import Header from './components/Header';
-
+import Footer from './components/Footer';
 
 function App() {
   const [listTodo, setListTodo] = useState([]);
@@ -18,9 +18,9 @@ function App() {
   }
   return (
 
-    <div className="main-container bg-slate-500 h-screen text-center text-white font-semibold">
+    <div className="main-container bg-slate-500 text-center text-white font-semibold">
       <Header />
-      <div className='center-container w-1/3 p-4 bg-red-300 m-auto mt-12'>
+      <div className='center-container w-1/3 p-4  m-auto mt-12 mb-12 min-h-full'>
         <TodoInput addList={addList} />
         <h1>Todo</h1>
         <hr className='mb-8 w-72 m-auto' />
@@ -31,8 +31,10 @@ function App() {
         })}
 
       </div>
-
+      <Footer />
     </div>
+
+
   );
 }
 

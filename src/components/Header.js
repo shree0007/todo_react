@@ -8,14 +8,14 @@ function Header(props) {
         <header className="header">
             <div className='logo-and-heading'>
 
-                <h1>My Todo App</h1>
+                <h1 className='text-2xl cursor-pointer'>My Todo App</h1>
             </div>
 
             <nav className="nav">
                 <ul className='flex space-x-4'>
-                    <li>Home</li>
-                    <li>About me</li>
-                    <li>Contact</li>
+                    <li className='cursor-pointer'>Home</li>
+                    <li className='cursor-pointer'>About me</li>
+                    <li className='cursor-pointer'>Contact</li>
                 </ul>
             </nav>
         </header>
