@@ -13,7 +13,14 @@ function App() {
       TODO APP
       <div className='center-container'>
         <TodoInput addList={addList} />
-        <TodoList />
+        <h1>Todo</h1>
+        <hr className='mb-8 w-72 m-auto' />
+        {listTodo.map((listItem, i) => {
+          return (
+            <TodoList key={i} item={listItem} />
+          )
+        })}
+
       </div>
     </div>
   );
